@@ -1,0 +1,21 @@
+language: php
+
+php:
+    - 5.4
+    - 5.5
+
+before_script:
+    - wget http://getcomposer.org/composer.phar
+    - mkdir -p web/code-coverage
+    - php composer.phar install --dev
+
+script:
+    - bin/atoum
+
+notifications:
+    email:
+        recipients:
+            - ci@verylastroom.com
+        on_success: change
+        on_failure: change
+
