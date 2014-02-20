@@ -1,0 +1,26 @@
+{
+    "name": "php-labs/valueobjects-utils",
+    "description": "php value objects utils",
+    "authors": [
+        {
+            "name": "php-labs guys",
+            "homepage": "https://github.com/php-labs/valueobjects-utils/contributors"
+        }
+    ],
+    "licence": "MIT",
+    "autoload": {
+        "psr-4": {
+            "PhpLabs\\ValueObjects\\Utils\\": "src"
+        }
+    },
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "require-dev": {
+        "atoum/atoum": "*@dev"
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "minimum-stability": "stable"
+}
